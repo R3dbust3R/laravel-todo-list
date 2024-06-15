@@ -1,3 +1,100 @@
+# Laravel To-Do List Project
+
+This repository contains a simple to-do list application developed using Laravel framework.
+
+## Project Overview
+
+- **Database Used:** MySQL
+- **Database Credentials:**
+  - **Username:** root
+  - **Database:** todolist
+  - **Password:** ``
+  - **Host:** 127.0.0.1
+
+## Components Used
+
+- **Model:** Task (`App\Models\Task`)
+- **Controller:** TaskController (`App\Http\Controllers\TaskController`)
+- **Components:**
+  - Navbar (`resources/views/components/navbar.blade.php`)
+  - Task (`resources/views/components/task.blade.php`)
+- **Layout:**
+  - Header (`resources/views/layouts/header.blade.php`)
+  - Footer (`resources/views/layouts/footer.blade.php`)
+- **Routes:** Basic routes for task management
+
+## Installation and Setup
+
+Follow these steps to set up the project locally:
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/otmanetalhaoui/laravel-todo-list.git
+   cd laravel-todo-list
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   composer install
+   ```
+
+3. **Set Up Environment Variables:**
+
+   Create a copy of `.env.example` and rename it to `.env`. Update the database connection details (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`) in `.env`:
+
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=your_database_name
+   DB_USERNAME=root
+   DB_PASSWORD=your_password
+   ```
+
+4. **Generate Application Key:**
+
+   ```bash
+   php artisan key:generate
+   ```
+
+5. **Run Migrations and Seeders:**
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+6. **Start the Development Server:**
+
+   ```bash
+   php artisan serve
+   ```
+
+   Access the application at `http://localhost:8000`.
+
+## Usage
+
+- Manage tasks using the task management interface.
+- Customize layouts and components as needed for your project.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions, feature requests, or find any issues, please create an issue or submit a pull request.
+
+
+---
+
+### Additional Notes:
+
+- **Customization:** Feel free to customize routes, components, and layouts according to your project requirements.
+- **Security:** Ensure to secure your database credentials and sensitive information.
+- **Documentation:** Keep the Markdown file updated with any changes or additions to the project structure.
+
+This Markdown file serves as a basic guide to help users understand and set up your Laravel to-do list project effectively. Adjust the content and sections as per your project's specific details and requirements.
+
+---------------------------------------
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
